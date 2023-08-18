@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button</title>
+    <link rel="stylesheet" href="static/for_all.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="static/ub1logo.png" alt="uber.com">
+        </div>
+        <ul>
+            <li class="item"><a href="/">Home</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Week-Days Data</h1>
+    </section>
+    <section>
+        <div style="display:flex; justify-content: center; border:4px solid black; margin:40px 190px; box-shadow:5px 5px 15px 2px;">
+          <div
+                  id='chart' class='chart'></div>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.myuberdata.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script type='text/javascript'>
+  var graphs = {{graphJSON | safe}};
+  Plotly.plot('chart',graphs,{});
+</script>
+</html>

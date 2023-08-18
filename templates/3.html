@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readrows</title>
+    <link rel="stylesheet" href="static/for_all.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="static/ub1logo.png" alt="uber.com">
+        </div>
+        <ul>
+            <li class="item"><a href="/">Home</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Showing Starting Rows</h1>
+        <button class="btn"></button>
+    </section>
+    <section>
+        <div class="main_form">
+          <div class="input">
+                    <h2>Input a Number to See Staring Rows of Data</h2>
+          </div >
+          <div class="input_form">
+            <form method="GET" action="/3">
+              <input type ="number" id="num_input" name = "num" />
+                <br><br>
+              <input type = "submit" id="num_submit" value = "Submit" />
+            </form>
+          </div>
+        </div>
+    </section>
+    <section>
+        <div class="details">
+            <h1 style="font-size: 40px; font-family: monospace;">Your Starting {{ start }} Rows Data Is Here</h1>
+            <br><br>
+             <h1>
+                 {% for table in head %}
+                 <h2>{{titles[loop.index]}}</h2>
+                 {{ table|safe }}
+                 {% endfor %}
+             </h1>
+        </div>
+    </section>
+
+<!--    <footer>-->
+<!--        <div class="center">-->
+<!--            Copyright &copy; www.myuberdata.com. All rights reserved!-->
+<!--        </div>-->
+<!--    </footer>-->
+
+</body>
+</html>
+

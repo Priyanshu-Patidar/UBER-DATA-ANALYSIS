@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --navbar-height: 59px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    /* background-color: black; */
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 109px;
+    height: 258px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('bg1.jpg') no-repeat center center/cover;
+    height: 350px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home h1{
+    color:rgb(255, 255, 255);
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+.dataframe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: auto;
+    flex-direction: column;
+    border:2px solid black;
+    margin-top:50px;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    padding-top:40px;
+}
+
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+    width:100%;
+}
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+    padding: 0px 10px 0px 10px;
+
+}
+td{
+   display: table-cell;
+    vertical-align: inherit;
+
+    text-align: -internal-center;
+
+
+}
+
+
+.center {
+    text-align: center;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+.box{
+    justify-content: center;
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    margin: 2px 250px 2px;
+    margin-top:80px;
+    margin-bottom:50px;
+    border-radius: 28px;
+    background: rgb(210 225 255);
+    transition: all 3s ease-out 0.5s;
+}
+.btn2{
+    padding: 2px 20px;
+    border: 2px solid white;
+    background-color: #c68500;
+    color: white;
+    margin: 10px;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.centre{
+    text-align: center;
+    margin:10px;
+}
+.input h2{
+    display:flex;
+    justify-content:center;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+.input_form{
+    display:flex;
+    justify-content:center;
+    margin-top:25px;
+}
+.input_form #num_input{
+    border: 2px solid black;
+    background-color: #fdebd5;
+    padding: 9px 10px;
+    border-radius:10px;
+    box-shadow:3px 3px 10px 1px;
+}
+.input_form #num_submit{
+    border: 2px solid black;
+    font-size: 20px;
+    padding: 3px 60px;
+    border-radius: 12px;
+    background-color: burlywood;
+    box-shadow:3px 3px 10px 1px;
+    cursor:pointer;
+
+}
+.main_form{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px 200px;
+    background-color: #e6e0ff;
+    border-radius: 10px;
+    box-shadow: 9px 9px 20px 4px black;
+}
+#loge{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 109px;
+    height: 585px;
+    justify-content: center;
+    align-items: center;
+}
+
+#loge::before{
+    content: "";
+    position: absolute;
+    background: url('login.jpg') no-repeat center center/cover;
+    height: 100%;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+#contact-box .btn3{
+    padding: 2px 20px;
+    border: 2px solid white;
+    background-color: #c68500;
+    color: black;
+    font-weight: 800;
+    margin: 10px;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#contact-box{
+    display:contents;
+    height:100%;
+    width:50%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+}
+.center{
+    text-align: center;
+}
+.a{
+    padding: 2px 2px;
+    border: 2px solid white;
+    background-color: #ffe8ba;
+    color: black;
+    font-weight: 800;
+    margin: 10px;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.register{
+    padding: 2px 20px;
+    border: 2px solid white;
+    background-color: #ffe6b2;
+    color: black;
+    margin: 10px;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    box-shadow:3px 3px 10px 1px brown;
+    cursor: pointer;
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Uber Data Analyser</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="static/css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="static/ub1logo.png" alt="uber.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Analysis</a></li>
+            <li class="item"><a href="#services-container1">Visualization</a></li>
+            <li class="item"><a href="#client-section">Authorized By</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+            <li class="item"><a href="/login">Login</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to Uber</h1>
+        <p>Uber is a transportation company with an app that allows passengers to hail a ride  </p>
+        <p>and drivers to charge fares and get paid. </p>
+        <br>
+
+    </section>
+    <section class="divide-two" id="sample">
+        <div class="files">
+            <h4> Ensure Your File Must Be In This Formate.</h4>
+            <div class="formate">
+            <img src="static/img/formate.png" alt="">
+            </div>
+        </div>
+        <div id="file">
+            <h1 style='text-align: center'>Upload Your .CSV File Here</h1>
+            <form method="POST" enctype="multipart/form-data" action="/" style="justify-content:center;">
+                <input type="file" id="myFile" name="filename" accept=".csv">
+                <input id="submit" class="btn" type="submit">
+            </form>
+            <div class="toast">
+                <h2>File Uploaded Successfully</h2>
+                <span>X</span>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="services-container">
+        <h1 class="h-primary center">Analysis</h1>
+        <div id="services">
+            <div class="box">
+                <img src="static/img/uber.jpeg" alt="">
+                <h2 class="h-secondary center">My Uber Drives</h2>
+                <p class="center">All data is fixed. </p>
+            </div>
+            <div class="box">
+                <img src="static/img/time2.webp" alt="">
+                <h2 class="h-secondary center">Duration</h2>
+                <p class="center">Calculate duration of each trip.</p>
+            </div>
+            <div class="box">
+                <img src="static/img/car.jpg" alt="">
+                <h2 class="h-secondary center">Trip</h2>
+                <p class="center">Number of trips.</p>
+            </div>
+            
+    </section>
+    <section id="primary">
+        <div id="primary">
+            <div class="box">
+                <h3 class="centre">To read the Data Set.</h3>
+              <!-- <button class="btn2">Click Here</button> -->
+                <a class="btn2" href="/2">click Here</a>
+            </div>
+            <div class="box">
+                <h3 class="centre">To See Start Data</h3>
+                <a class="btn2" href="/3">click Here</a>
+            </div>
+            <div class="box">
+                <h3 class="centre">To See End Data</h3>
+                <a class="btn2" href="/4">click Here</a>
+            </div>
+    </section>
+
+    <section id="services-container1">
+        <h1 class="h-primary center">Visualization</h1>
+        <div id="services">
+            <div class="box">
+                <img src="static/img/graph1.png" alt="">
+                <h2 class="h-secondary center">Trips per Month</h2>
+                <p class="center"></p>
+            </div>
+            <div class="box">
+                <img src="static/img/graph2.jpg" alt="">
+                <h2 class="h-secondary center">Trips per Hour</h2>
+                <p class="center"></p>
+            </div>
+            <div class="box">
+                <img src="static/img/graph3.png" alt="">
+                <h2 class="h-secondary center">Purpose of Trip</h2>
+                <p class="center"></p>
+            </div>
+    </section>
+    <section id="secondary">
+        <div id="secondary">
+            <div class="box">
+                <h3 class="centre">Visualise the number of trip at each Category with Purpose.</h3>
+               <a class="btn2" href="/7">click Here</a>
+            </div>
+            <div class="box">
+                <h3 class="centre">Visualise the Data for Each Purpose</h3>
+               <a class="btn2" href="/8">click Here</a>
+            </div>
+            <div class="box">
+                <h3 class="centre">Visualise Data For Each Ride With Distance</h3>
+                <a class="btn2" href="/9">click Here</a>
+            </div>
+            <div class="box">
+                <h3 class="centre">Visualise Day-Night Data</h3>
+               <a class="btn2" href="/10">click Here</a>
+            </div>
+            <div class="box">
+                <h3 class="centre">Visualise Month total rides And Month max ride Data</h3>
+                <a class="btn2" href="/11">click Here</a>
+            </div>
+            <div class="box">
+                <h3 class="centre">Visualise Week-Days Data</h3>
+                <a class="btn2" href="/12">click Here</a>
+            </div>
+            <div class="box">
+                <h3 class="centre">Visualise Rides Each Month</h3>
+               <a class="btn2" href="/13">click Here</a>
+            </div>
+            <div class="box">
+                <h3 class="centre">Visualise Rides Each Day</h3>
+                <a class="btn2" href="/14">click Here</a>
+            </div>
+            <div class="box">
+                <h3 class="centre">Visualise Rides Each Hour</h3>
+                <a class="btn2" href="/15">click Here</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="client-section">
+        <h1 class="h-primary center">Authorized By</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="static/img/logo1.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="static/img/logo2.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="static/img/logo3.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="static/img/logo4.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="static/img/logo5.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="static/img/logo6.png" alt="Our Client">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <input class="btn3" type="submit">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.myuberdata.com. All rights reserved!
+        </div>
+    </footer>
+
+    <script>
+        let toast = document.querySelector('.toast');
+        let spanClose = document.querySelector('.toast span');
+        {% if data == 'file_uploaded' %}
+            toast.classList.add('show');
+        {% endif %}
+
+         {% if data == '' %}
+            toast.classList.remove('show');
+        {% endif %}
+
+        spanClose.addEventListener('click',()=>{
+            toast.classList.remove('show');
+        });
+    </script>
+</body>
+</html>
